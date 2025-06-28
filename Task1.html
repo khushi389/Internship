@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My First Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #a1c4fd, #c2e9fb);
+            color: #333;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #2a52be;
+            text-align: center;
+        }
+
+        h2{
+            color: rgb(107, 43, 127);
+        }
+
+        .image-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .image-gallery img {
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            color: #008000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #2a52be;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #1c3b6e;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>👋 Welcome to My Interactive Webpage</h1>
+    <h2>About Me</h2>
+    <p>I'm learning web development.This is a simple webpage created using HTML, styled with CSS and made interactive using JavaScript.</p>
+    
+    <div class="image-gallery">
+        <img src="https://i.pinimg.com/originals/ba/0e/b8/ba0eb82dbe74fb21925083c2ea7475b4.jpg" alt="Web Development 1">
+        <img src="https://wallpaperaccess.com/full/1947484.jpg" alt="Web Development 2">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Web Development 3">
+    </div>
+
+    <p>Check out <a href="https://developer.mozilla.org/en-US/docs/Web" target="_blank">MDN Web Docs</a> to learn more about web development.</p>
+
+    <button onclick="showMessage()">Click Me!</button>
+
+    <script>
+        function showMessage() {
+            alert("🎉 You clicked the button! Keep learning and building amazing websites!");
+        }
+    </script>
+
+</body>
+</html>
